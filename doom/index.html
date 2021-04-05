@@ -1,50 +1,54 @@
 <html>
-  <head>
-    <style>
-      table {
-        border-collapse: collapse;
-        border: 1px solid #000
-      }
 
-      td{
-        width: 50px;
-        height: 50px;
-        border: 1px solid #000;
-        text-align: center;
-        vertical-align: center;
-        font-family: monospace;
-        font-size: 18;
-        position: relative;
-      }
-      
-      .pixel-index {
-        font-size: 10px;
-        display: inline-block;
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        color: #999;
-      }
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid #000
+    }
 
-      td.pixel{
-        width: 4px;
-        height: 4px;
-        border: 0;
-      }
+    td {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #000;
+      text-align: center;
+      vertical-align: center;
+      font-family: monospace;
+      font-size: 18;
+      position: relative;
+    }
 
-      #fireCanvas {
-        max-width: 400px;
-        margin: 0 auto;
-        margin-top: 15%;
-      }
+    .pixel-index {
+      font-size: 10px;
+      display: inline-block;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      color: #999;
+    }
 
-      body {
-        background: #000;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="fireCanvas"></div>
-    <script src="fire.js"></script>
-  </body>
+    td.pixel {
+      width: 4px;
+      height: 4px;
+      border: 0;
+    }
+
+    #fireCanvas {
+      max-width: 400px;
+      margin: 0 auto;
+      margin-top: 15%;
+    }
+
+    body {
+      background: #000;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="fireCanvas"></div>
+  <script src="fire.js"></script>
+</body>
+
 </html>

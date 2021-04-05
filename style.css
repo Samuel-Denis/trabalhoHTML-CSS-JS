@@ -1,8 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     max-width: 100%;
     max-height: 100%;
     background:rgb(188, 241, 237);
-    
 }
 body, ul , li, p {
     margin: 0px;
@@ -82,13 +86,13 @@ p {
 #container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px;
+    margin-bottom: 50px;
 }
 
 #jogador {
     max-width: 700px;
-    margin: 0 5%;
-    padding: 0 7%;
+    margin: 0 3%;
+    padding: 0 6%;
     display: flex;
     flex-wrap: wrap;
     left: -10%;
@@ -115,9 +119,8 @@ p {
 }
 
 #votos {
-    padding: 0;
+    padding-left: 3%;
     max-width: 200px;
-    padding: 0 2px;
 }
 
 .voto {
@@ -170,4 +173,34 @@ p {
     cursor: pointer;
     background: rgb(28, 182, 169);
     color: #fff;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom:0;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000;
+}
+
+footer > p {
+    color: #fff;
+    font-size: 12px;
+    padding-left: 30%;
+    color: rgb(188, 241, 237)
+}
+
+footer > a {
+    padding-top: 1%;
+    padding-left: 2%;
+    font-size: 14px;
+    color: rgb(188, 241, 237)
+}
+
+footer > a:hover {
+    color: rgb(156, 201, 197);
 }

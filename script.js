@@ -3,21 +3,21 @@ const jogador = [
     id: 0,
     name: "Neymar",
     foto: "img/neymar.png",
-    votos: 100,
+    votos: 0,
     porcentagem: 0,
   },
   {
     id: 1,
     name: "Messi",
-    foto: "/img/messi.png",
-    votos: 2345,
+    foto: "img/messi.png",
+    votos: 0,
     porcentagem: 0,
   },
   {
     id: 2,
     name: "C. Ronaldo",
-    foto: "/img/cr7.png",
-    votos: 54678,
+    foto: "img/cr7.png",
+    votos: 0,
     porcentagem: 0,
   },
   
@@ -64,7 +64,7 @@ mostrarVoto = () => {
         </div>
        </div>`;
   });
-
+  
   document.getElementById("votos").innerHTML = html;
 };
 
@@ -88,9 +88,6 @@ calcularPorcentagem = () =>{
 
         jogador[i].porcentagem = porcentagem.toFixed(2)
     }
-
-    
-
     mostrarVoto()
 }
 
@@ -102,8 +99,9 @@ votar = () => {
       let key = this.getAttribute("key");
       jogador[key].votos++;
       calcularPorcentagem()
+      document.getElementById("body").style.overflow="hidden"
+      document.querySelector("#jogador").style.display="none"
       confirmeVoto(jogador[key].name, jogador[key].foto);
-
       return false;
     });
   }
@@ -126,6 +124,7 @@ function confirmeVoto(nome, foto) {
                <img src=${foto}>
                <p class="player-name">${nome}</p>
             </div>
+            <div class="text"><p>Òtima escolha</p></div>
             <div class='botao'>
             <button onclick="votarNovamente()" class="btn">
                 <p>Presione aqui</p>
@@ -136,7 +135,10 @@ function confirmeVoto(nome, foto) {
         `;
 }
 votarNovamente = () => {
+  document.querySelector("#jogador").style.display="flex"
   document.querySelector("#confirmarVoto").innerHTML = "";
+  document.getElementById("body").style.overflow="auto"
+
 };
 
 start();
