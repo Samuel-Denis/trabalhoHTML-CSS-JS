@@ -1,0 +1,173 @@
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background:rgb(188, 241, 237);
+    
+}
+body, ul , li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.header {
+    background: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: rgb(188, 241, 237)
+}
+
+.menu li a:hover {
+   color: rgb(156, 201, 197)
+}
+
+.logo {
+    max-width: 100px;
+    padding: 0px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+#jogador {
+    max-width: 700px;
+    margin: 0 5%;
+    padding: 0 7%;
+    display: flex;
+    flex-wrap: wrap;
+    left: -10%;
+}
+
+.player-card {
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 200px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.player-card :hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.player-name {
+    padding-top: 5%;
+    color: #000;
+}
+
+#votos {
+    padding: 0;
+    max-width: 200px;
+    padding: 0 2px;
+}
+
+.voto {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.voto:hover {
+    background-color:rgb(155, 216, 211, 0.2);
+}
+
+.block {
+    width: 200px;
+    height: 29.11px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.player-voto {
+    font-size: 20px;
+}
+
+.container-voto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.card {
+    margin: 0 ;
+    padding: 0 20px;
+    max-width: 200px;
+    
+}
+
+.btn {
+    font-size: 10px;
+    text-transform: initial;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    background: rgba(28, 182, 169, 0.5);
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(28, 182, 169);
+    color: #fff;
+}
