@@ -101,33 +101,23 @@ votar = () => {
       calcularPorcentagem()
       document.getElementById("body").style.overflow="hidden"
       document.querySelector("#jogador").style.display="none"
-      confirmeVoto(jogador[key].name, jogador[key].foto);
+      confirmeVoto(jogador[key].id);
       return false;
     });
   }
 };
 
-function confirmeVoto(nome, foto) {
+function confirmeVoto(id) {
   document.querySelector("#confirmarVoto").innerHTML = ` 
-        <div class="container-voto", style="
-        position: fixed;
-        background-color: rgba(188, 241, 237, 0.9) ;
-        max-width: 85%;
-        height: 85%;
-        top: 30%;
-        left: 5%;
-        right: 5%;
-        padding: 0 20px;
-        display: flex;
-        ">
+        <div class="container-voto">
             <div class="card">
-               <img src=${foto}>
-               <p class="player-name">${nome}</p>
+               <img class="image"src=${jogador[id].foto}>
+               <p class="player-name">Obrigado pelo voto</p>
             </div>
-            <div class="text"><p>Òtima escolha</p></div>
+           
             <div class='botao'>
             <button onclick="votarNovamente()" class="btn">
-                <p>Presione aqui</p>
+                <p>votar novamente</p>
             </button>
             </div>
 
