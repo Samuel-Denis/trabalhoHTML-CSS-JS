@@ -5,6 +5,16 @@ const jogador = [
     foto: "img/neymar.png",
     votos: 0,
     porcentagem: 0,
+    decription: 
+                `Lorem Ipsum is simply dummy text of <br>
+                  the printing and typesetting industry<br>.
+                  Lorem Ipsum has been the industry's standard<br>
+                  dummy text ever since the 1500s, when an <br>
+                  unknown printer took a galley of type and <br>
+                  scrambled it to make a type specimen book.<br>
+                  It has survived not only five centuries, but <br>
+                  also the leap into electronic typesetting,<br> 
+                  versions of Lorem Ipsum.`
   },
   {
     id: 1,
@@ -12,14 +22,34 @@ const jogador = [
     foto: "img/messi.png",
     votos: 0,
     porcentagem: 0,
-  },
+    decription: 
+                `Lorem Ipsum is simply dummy text of <br>
+                the printing and typesetting industry<br>.
+                Lorem Ipsum has been the industry's standard<br>
+                dummy text ever since the 1500s, when an <br>
+                unknown printer took a galley of type and <br>
+                scrambled it to make a type specimen book.<br>
+                It has survived not only five centuries, but <br>
+                also the leap into electronic typesetting,<br> 
+                versions of Lorem Ipsum.`
+},
   {
     id: 2,
     name: "C. Ronaldo",
     foto: "img/cr7.png",
     votos: 0,
     porcentagem: 0,
-  },
+    decription:
+                `Lorem Ipsum is simply dummy text of <br>
+                the printing and typesetting industry<br>.
+                Lorem Ipsum has been the industry's standard<br>
+                dummy text ever since the 1500s, when an <br>
+                unknown printer took a galley of type and <br>
+                scrambled it to make a type specimen book.<br>
+                It has survived not only five centuries, but <br>
+                also the leap into electronic typesetting,<br> 
+                versions of Lorem Ipsum.`
+},
   
 ];
 
@@ -112,7 +142,8 @@ function confirmeVoto(id) {
         <div class="container-voto">
             <div class="card">
                <img class="image"src=${jogador[id].foto}>
-               <p class="player-name">Obrigado pelo voto</p>
+               <p class="player-description">${jogador[id].decription}</p>
+               <p class="description">Obrigado pelo voto</p>
             </div>
            
             <div class='botao'>

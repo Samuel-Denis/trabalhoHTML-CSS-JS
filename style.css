@@ -127,9 +127,15 @@ p {
   transform: scale(1.1);
 }
 
-.player-name {
-  padding-top: 5%;
+.player-description {
   color: #000;
+  font-size: 15px;
+}
+
+.description{
+    display: none;
+    color: #000;
+    font-size: 15px;
 }
 
 #votos {
@@ -178,7 +184,7 @@ p {
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .image {
@@ -280,6 +286,16 @@ footer > a:hover {
 
   #jogador {
       padding-bottom: 30%;
+  }
+  .player-description{
+      display: none;
+  }
+  
+  .description{
+      display: inline;
+  }
+  #body{
+      overflow: initial;
   }
 
 }
