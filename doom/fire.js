@@ -1,7 +1,7 @@
 const firePixelArray = [];
 
-const fireWidht = 100;
-const fireHeith = 50;
+const fireWidht = 10;
+const fireHeith = 5;
 
 const fireColorsPalette = [
   { r: 7, g: 7, b: 7 },
